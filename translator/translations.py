@@ -30,7 +30,6 @@ def dynamic_search(url):
     time.sleep(2)
     r = driver.page_source
     soup = BeautifulSoup(r,'html.parser')
-    results = []
     filter_html = soup.find('div', attrs = {'id':'mt-box'}).find('div', attrs = {'class': 'trg ltr'}).find('div', attrs = {'class': None})
     translation = filter_html.find('span', attrs = {"class": 'text'}).text
     dynamic_results.append(translation)
