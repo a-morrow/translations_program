@@ -36,33 +36,3 @@ while flag:
         print(i)
     print('\nExiting Program -- Translation Complete')
     flag = False
-
-
-
-
-
-
-
-
-# flag = True
-# while(flag):
-#     # if not connection
-#         # print failure
-#         # set flag false
-#         # return
-#
-#     print('welcome to the app')
-#     print('OPTIONS:\n--------------\n'\
-#           +'a) translate\n'\
-#           +'b) quit')
-#     decision = input('> ')
-#     if(decision == 'translate'):
-#         lang1 = input('lang 1: ')
-#         lang2 = input('lang 2: ')
-#         user_input = input('translate: ')
-#         print('\nOutput:\n----------\n')
-#         print(evaluate(p.parse(lang1,lang2,user_input)))
-#
-#     else:
-#         print('exiting...')
-#         flag=False

@@ -1,4 +1,3 @@
-
 def parse_information_to_url(language,text):
     origin_lang = 'https://context.reverso.net/translation/english-'
     language_url = origin_lang+language+'/'
