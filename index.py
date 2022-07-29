@@ -19,7 +19,7 @@ while flag:
     print('OPTIONS:\n--------------\n'+'a) Enter Application [enter]\n' + 'b) Quit Application [quit]')
     user_decision = input('>')
     if user_decision == 'quit':
-        print('Exiting program\nThank you for using this application!')
+        print('--------------\nExiting program\n--------------')
         flag = False
         continue
     else:
@@ -37,5 +37,5 @@ while flag:
     print('Translation:\n')
     for i in translation:
         print(i)
-    print('\n----------------------\nTranslation Complete')
+    print('\n--------------\nTranslation Complete\n--------------')
 
