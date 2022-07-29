@@ -5,20 +5,23 @@ from translator import translations as tr
 
 
 print('Welcome to Python Translator....\nTesting Connection:')
-
+connection_tested = False
 flag = True
 while flag:
     avail_input_lang = {'es': 'spanish', 'fr': 'french', 'gr': 'german', 'it': 'italian'}
-    if not con.connection_main():
-        print('Connection error detected')
-        flag = False
-    else:
-        print('Connection successful')
+    if not connection_tested:
+        if not con.connection_main():
+            print('Connection error detected')
+            flag = False
+        else:
+            print('Connection successful')
+            connection_tested = True
     print('OPTIONS:\n--------------\n'+'a) Enter Application [enter]\n' + 'b) Quit Application [quit]')
     user_decision = input('>')
     if user_decision == 'quit':
-        print('Exiting program')
+        print('Exiting program\nThank you for using this application!')
         flag = False
+        continue
     else:
         print('Entering program')
     print("Available languages to translate to are:'\n'",avail_input_lang)
@@ -34,5 +37,5 @@ while flag:
     print('Translation:\n')
     for i in translation:
         print(i)
-    print('\nExiting Program -- Translation Complete')
-    flag = False
+    print('\n----------------------\nTranslation Complete')
+
