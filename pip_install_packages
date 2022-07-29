@@ -1,0 +1,13 @@
+**If one does not work, attempt attaching 'python -m' before pip install:
+--> 'python -m pip install requests'
+
+# Selenium
+pip install selenium
+#pip3 install selenium
+
+BeautifulSoup
+pip install beautifulsoup4
+#pip3 install beutifulsoup4
+
+# Requests
+python -m pip install requests
