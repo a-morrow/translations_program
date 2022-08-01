@@ -24,7 +24,9 @@ def static_search(url):
 
 def dynamic_search(url):
     dynamic_results = []
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),chrome_options=options)
     driver.minimize_window()
     driver.get(url)
     time.sleep(2)

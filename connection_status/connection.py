@@ -13,7 +13,9 @@ translation_url = "https://context.reverso.net/translation/"
 # Selenium Variables // Dynamic Connection
 capabilities = DesiredCapabilities.CHROME
 capabilities['goog:loggingPrefs'] = {'performance': 'ALL'}
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),chrome_options=options)
 driver.get(translation_url)
 time.sleep(2)
 
