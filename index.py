@@ -29,6 +29,7 @@ while flag:
     if language_input not in avail_input_lang:
         print('Language not supported. Exiting program')
         flag = False
+        continue
     else:
         print('Language chosen:',avail_input_lang[language_input])
     translation_text = input('Enter text to translate:')
