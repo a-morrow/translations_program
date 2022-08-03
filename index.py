@@ -13,6 +13,7 @@ while flag:
         if not con.connection_main():
             print('Connection error detected')
             flag = False
+            continue
         else:
             print('Connection successful')
             connection_tested = True
